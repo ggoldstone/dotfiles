@@ -11,12 +11,10 @@ Perhaps you haven't learned all the things yet:
 
 [Managing Dotfiles Across Multiple Platforms](http://www.geoffcorey.com/2015/03/managing-dotfiles-across-multiple-platforms/)
 
+[Dotfiles Are Meant to Be Forked](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/)
 
-##Customize and automate all the things!
 
-## install
-
-### git clone
+## Install
 
 ```bsh
 git clone https://github.com/ggoldstone/dotfiles.git ~/.dotfiles
@@ -35,18 +33,18 @@ defaults, and so on. Tweak this script, and occasionally run `dot` from
 time to time to keep your environment fresh and up-to-date. You can find
 this script in `bin/`.
 
-## topical
+## Topical
 
-Everything's built around topic areas. If you're adding a new area to your
-forked dotfiles — say, "Java" — you can simply add a `java` directory and put
+Everything's built around topic areas. If you're adding a new area to your forked dotfiles — say, "Java" — you can simply add a `java` directory and put
 files in there. Anything with an extension of `.zsh` will get automatically
 included into your shell. Anything with an extension of `.symlink` will get
 symlinked without extension into `$HOME` when you run `script/bootstrap`.
 
 ## what's inside
 
+A work in progress as I figure out what I want to keep for myself.
 
-## components
+## Components
 
 There's a few special files in the hierarchy.
 
@@ -59,3 +57,9 @@ There's a few special files in the hierarchy.
   This is so you can keep all of those versioned in your dotfiles
   but still keep those autoloaded files in your home directory. These get
   symlinked in when you run `script/bootstrap`.
+
+## Thanks
+
+* [Joshua Rubin](https://github.com/joshuarubin) for planting the seed of dotfiles in my mind
+* [Zach Holman](https://github.com/holman/dotfiles) for wanting his dotfiles to work for everyone including Joshua.
+* Fork all the things!
