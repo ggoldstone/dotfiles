@@ -5,6 +5,9 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+# Load local aliases
+source $HOME/.aliases
+
 fpath=($ZSH/functions $fpath)
 
 source $ZSH/system/path.zsh
